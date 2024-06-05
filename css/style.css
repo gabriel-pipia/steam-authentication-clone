@@ -247,6 +247,7 @@ body {
   min-width: var(--full-width-vw);
   min-height: var(--full-height-vh);
   background: var(--bg-color);
+  scroll-behavior: smooth;
 }
 
 .body.bg-image {
