@@ -17,11 +17,7 @@ button_sign_up.forEach(button => {button.addEventListener('click', ()=>{authMode
 
 function authMode(name) {
   body.setAttribute('auth-mode', name);
-  body.scrollTo({
-  top: 0,
-  left: 0,
-  behavior: "smooth",
-  });
+  body.scrollTo(0,0);
 }
 
 function toggleDropdown(button) {
