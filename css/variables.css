@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Gluten:wght@100..900&family=Lemonada:wght@300..700&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    /* Current Project Variables */
+    --black: #000;
+    --bg-color: #212429;
+    --header-bg-clr: #171a21;
+    --text-color: #fff;
+    --text-clr-100: #dfe3e6;
+    --text-clr-500: #96989a;
+    --header-text-clr: #b8b6b4;
+    --install-btn-clr: #5c7e10;
+    --input-clr: #32353c;
+    --btn-linear-gradient: linear-gradient(45deg, #28a2ff, #0051ff);
+    /* Primary Color */
+    --color-blue: #2076da;
+    --color-green: #02b802;
+    --color-yellow: #ecdd00;
+    --color-orange: #ff8800;
+    --color-purple: #6f5bd4;
+    --color-red: #f50101;
+    /* Background Color */
+    --bg-color-light: var(--light);
+    --bg-color-dark: var(--dark);
+    /* Colors */
+    --color-transparent-default: rgba(0, 0, 0, 0);
+    --color-transparent-dark-01: rgba(0, 0, 0, 0.1);
+    --color-transparent-dark-02: rgba(0, 0, 0, 0.2);
+    --color-transparent-dark-03: rgba(0, 0, 0, 0.3);
+    --color-transparent-dark-04: rgba(0, 0, 0, 0.4);
+    --color-transparent-dark-05: rgba(0, 0, 0, 0.5);
+    --color-transparent-dark-06: rgba(0, 0, 0, 0.6);
+    --color-transparent-dark-07: rgba(0, 0, 0, 0.7);
+    --color-transparent-dark-08: rgba(0, 0, 0, 0.8);
+    --color-transparent-dark-09: rgba(0, 0, 0, 0.9);
+    --color-transparent-light-01: rgba(255, 255, 255, 0.1);
+    --color-transparent-light-02: rgba(255, 255, 255, 0.2);
+    --color-transparent-light-03: rgba(255, 255, 255, 0.3);
+    --color-transparent-light-04: rgba(255, 255, 255, 0.4);
+    --color-transparent-light-06: rgba(255, 255, 255, 0.6);
+    --color-transparent-light-07: rgba(255, 255, 255, 0.7);
+    --color-transparent-light-08: rgba(255, 255, 255, 0.8);
+    --color-transparent-light-09: rgba(255, 255, 255, 0.9);
+    --color-gray-100: #f8f8f8;
+    --color-gray-200: #ededed;
+    --color-gray-300: #d9d9d9;
+    --color-gray-400: #c3c3c3;
+    --color-gray-500: #9c9a9a;
+    --color-gray-600: #7b7b7b;
+    --color-gray-700: #686868;
+    --color-gray-800: #484848;
+    --color-gray-900: #313131;
+    --color-teal-050: #f1fef4;
+    --color-teal-100: #e1fef1;
+    --color-teal-200: #bffde7;
+    --color-teal-300: #9ff9e1;
+    --color-teal-400: #86f3df;
+    --color-teal-500: #5cebdf;
+    --color-teal-600: #31c9c9;
+    --color-teal-700: #139baa;
+    --color-teal-800: #0e6c81;
+    --color-teal-900: #054861;
+    --color-green-050: #f2fef1;
+    --color-green-100: #e4fee1;
+    --color-green-200: #c4fdbf;
+    --color-green-200: #c4fdbf;
+    --color-green-300: #9ff9a7;
+    --color-green-400: #86f386;
+    --color-green-500: #5ceb61;
+    --color-green-600: #36c931;
+    --color-green-700: #13aa25;
+    --color-green-800: #1f810e;
+    --color-green-900: #086105;
+    --color-blue-050: #e5eeff;
+    --color-blue-100: #d2e0fe;
+    --color-blue-200: #a5befd;
+    --color-blue-300: #799cfb;
+    --color-blue-400: #597ef8;
+    --color-blue-500: #2451f5;
+    --color-blue-600: #193ed2;
+    --color-blue-700: #112cb0;
+    --color-blue-800: #0a1e8f;
+    --color-blue-900: #061574;
+    --color-gold-100: #fff7d1;
+    --color-gold-200: #ffeba3;
+    --color-gold-300: #ffdd75;
+    --color-gold-400: #ffd152;
+    --color-gold-500: #ffb914;
+    --color-gold-600: #da9710;
+    --color-gold-700: #b7780b;
+    --color-gold-800: #925a07;
+    --color-gold-900: #7c4a04;
+    --color-gold-050: #fffceb;
+    --color-red-100: #ffe0e0;
+    --color-red-200: #ffbdbd;
+    --color-red-300: #ff9e9e;
+    --color-red-400: #ff8585;
+    --color-red-500: #ff6161;
+    --color-red-600: #f64e4e;
+    --color-red-700: #d23232;
+    --color-red-800: #a62323;
+    --color-red-900: #781212;
+    --color-red-050: #fff4f4;
+    --color-overlay: var(--color-transparent-dark-02);
+    /* Sizing */
+    --header-height: 60px;
+    --containr-max-width: 1000px;
+    --containr-width: 90%;
+    --helf-size: 50%;
+    --helf-size-negative: -50%;
+    --full-width: 100%;
+    --full-height: 100%;
+    --full-width-vw: 100vw;
+    --full-height-vh: 100vh;
+    --size-3rem: 3rem;
+    --size-2_5rem: 2.5rem;
+    --size-2rem: 2rem;
+    --size-1_5rem: 1.5rem;
+    --size-1rem: 1rem;
+    --size-09rem: 0.9rem;
+    --size-08rem: 0.8rem;
+    --size-07rem: 0.7rem;
+    --size-06rem: 0.6rem;
+    --size-05rem: 0.5rem;
+    --size-04rem: 0.4rem;
+    --size-03rem: 0.3rem;
+    --size-02rem: 0.2rem;
+    --size-01rem: 0.1rem;
+    /* Transition */
+    --transition: 0.15s ease;
+    /* Radius */
+    --thin-radius: 0.2rem;
+    --small-radius: 0.4rem;
+    --big-radius: 0.8rem;
+    --large-radius: 1.5rem;
+    --large-radius-xl: 2rem;
+    --large-radius-xxl: 3rem;
+    --full-radius: 100%;
+    /* Opacity */
+    --opacity-0: 0;
+    --opacity-10: 0.1;
+    --opacity-20: 0.2;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-60: 0.6;
+    --opacity-70: 0.7;
+    --opacity-80: 0.8;
+    --opacity-90: 0.9;
+    --opacity-100: 1;
+    /* Padding */
+    --card-padding-small: var(--size-05rem);
+    --card-padding-medium: var(--size-1rem);
+    --card-padding-big: var(--size-1_5rem);
+    --card-padding-large: var(--size-2rem);
+    --card-padding-large-xl: var(--size-2_5rem);
+    --button-padding-small: var(--size-02rem --size-05rem);
+    --button-padding-medium: var(--size-05rem --size-08rem);
+    --button-padding-big: var(--size-07rem --size-1_5rem);
+    --button-padding-large: var(--size-1rem --size-2rem);
+    /* Shadow */
+    --shadow-basic: 0 0.1rem 0.25rem 0 var(--color-transparent-dark-02);
+    --shadow-hover: 0 0.5rem 0.7rem 0 var(--color-transparent-dark-03);
+    --shadow-strong: 0 0.1rem 0.25rem 0 var(--color-transparent-dark-03);
+    --shadow-stronger: 0 0.1rem 0.25rem 0 var(--color-transparent-dark-05);
+    --shadow-big: 0 0 3rem var(--color-transparent-dark-03);
+    --shadow-shallow: 0 0.1rem 0.5rem 0 var(--color-transparent-dark-04);
+    --shadow-deep: 0 1rem 1.5rem var(--color-transparent-dark-02);
+    /* Zindex */
+    --z-index-sticky: 9;
+    --z-index-header: 10;
+    --z-index-dropdown: 20;
+    --z-index-overlay: 100;
+    --z-index-skip-main: 1000;
+    /* Light color shades */
+    --light: #ffffff;
+    --light-50: #f9f9f9;
+    --light-100: #f2f2f2;
+    --light-200: #e6e6e6;
+    --light-300: #cccccc;
+    --light-400: #b3b3b3;
+    --light-500: #999999;
+    --light-600: #808080;
+    --light-700: #666666;
+    --light-800: #4d4d4d;
+    --light-900: #333333;
+    /* Dark color shades */
+    --dark: #000000;
+    --dark-50: #1a1a1a;
+    --dark-100: #262626;
+    --dark-200: #333333;
+    --dark-300: #404040;
+    --dark-400: #4d4d4d;
+    --dark-500: #595959;
+    --dark-600: #666666;
+    --dark-700: #737373;
+    --dark-800: #808080;
+    --dark-900: #8c8c8c;
+    /* Border variables */
+    --border-thin: var(--border-xxs) solid;
+    --border-medium: var(--border-m) solid;
+    --border-large: var(--border-l) solid;
+    /* Border radius variables */
+    --border-xxs: 1px;
+    --border-xs: 2px;
+    --border-s: 4px;
+    --border-m: 8px;
+    --border-l: 12px;
+    --border-xl: 24px;
+    --border-xxl: 44px;
+    --border-rounded: 50%;
+    /* Border color variables */
+    --border-light: var(--light-300);
+    --border-dark: var(--dark-300);
+    /* Typography */
+    --fw-thin: 100;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --fs-tiny: 0.7rem;
+    --fs-small: 0.8rem;
+    --fs-small-xl: 0.9rem;
+    --fs-medium: 1rem;
+    --fs-medium-xl: 1.15rem;
+    --fs-large: 1.25rem;
+    --fs-large-xl: 1.4rem;
+    --fs-large-xxl: 2rem;
+    --fs-large-xxxl: 3.5rem;
+    --fs-large-4xl: 5rem;
+
+    /* Font family variable */
+    --roboto: "Roboto", sans-serif;
+    --noto-serif: "Noto Serif", serif;
+    --kanit: "Kanit", sans-serif;
+    --inter: "Inter", sans-serif;
+    --lemonada: "Lemonada", cursive;
+    --gluten: "Gluten", cursive;
+    --ubunto: "Ubunto", sans-serif;
+    --default-font: var(--roboto);
+}
+
+:root[dark-theme="true"] {
+    /* Light color shades */
+    --dark: #ffffff;
+    --dark-50: #f9f9f9;
+    --dark-100: #f2f2f2;
+    --dark-200: #e6e6e6;
+    --dark-300: #cccccc;
+    --dark-400: #b3b3b3;
+    --dark-500: #999999;
+    --dark-600: #808080;
+    --dark-700: #666666;
+    --dark-800: #4d4d4d;
+    --dark-900: #333333;
+    /* Dark color shades */
+    --light: #000000;
+    --light-50: #1a1a1a;
+    --light-100: #262626;
+    --light-200: #333333;
+    --light-300: #404040;
+    --light-400: #4d4d4d;
+    --light-500: #595959;
+    --light-600: #666666;
+    --light-700: #737373;
+    --light-800: #808080;
+    --light-900: #8c8c8c;
+}
+
+:root[default-font="roboto"]{
+    --default-font: var(--roboto);
+}
+:root[default-font="noto-serif"]{
+    --default-font: var(--noto-serif);
+}
+:root[default-font="kanit"]{
+    --default-font: var(--kanit);
+}
+:root[default-font="inter"]{
+    --default-font: var(--inter);
+}
+:root[default-font="lemonada"]{
+    --default-font: var(--lemonada);
+}
+:root[default-font="gluten"]{
+    --default-font: var(--gluten);
+}
+:root[default-font="ubunto"]{
+    --default-font: var(--ubunto);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    /* display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; */
+    overflow: hidden; 
+}
+
+*::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.2rem;
+    background: var(--light);
+    font-family: var(--default-font);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: var(--border-xl);
+    background: var(--dark);
+}
+
+html {
+    font-family: var(--default-font);
+    user-select: none;
+}
+
+body {
+    min-height: var(--full-height-vh);
+    background: var(--bg-color-light);
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    background: none;
+    font-family: var(--default-font);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    appearance: none;
+    text-decoration: none;
+    color: var(--light);
+}
+
+img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    user-select: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: var(--opacity-90);
+}
+
+button:active{
+    opacity: var(--opacity-80);
+}
+
+[disabled]{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+[hidden]{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #1D1D1D;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7D7D7D;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1D1D1D;
+}
