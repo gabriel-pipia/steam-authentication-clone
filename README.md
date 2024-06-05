@@ -16,17 +16,8 @@ A clone of the Steam authentication system that allows users to sign in using th
   - Flexbox: For layout structure.
   - Media Queries: For responsive design.
 - **JavaScript**: For client-side logic and interactivity.
-- **Node.js**: For backend server setup.
-- **Express.js**: For handling HTTP requests and responses.
-- **Passport.js**: For authentication middleware.
-- **Steam Strategy**: For integrating Steam OAuth with Passport.js.
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js and npm installed on your machine.
-- A Steam API key. You can obtain one from the [Steam Community](https://steamcommunity.com/dev/apikey).
 
 ### Installation
 
@@ -40,24 +31,6 @@ A clone of the Steam authentication system that allows users to sign in using th
     cd steam-authentication-clone
     ```
 
-3. Install the dependencies:
-    ```bash
-    npm install
-    ```
-
-4. Create a `.env` file in the root directory and add your Steam API key:
-    ```env
-    STEAM_API_KEY=your_steam_api_key_here
-    CALLBACK_URL=http://localhost:3000/auth/steam/return
-    ```
-
-5. Start the application:
-    ```bash
-    npm start
-    ```
-
-6. Open your browser and go to `http://localhost:3000` to see the login page.
-
 ## Usage
 
 1. Open the application in your browser.
@@ -69,15 +42,13 @@ A clone of the Steam authentication system that allows users to sign in using th
 
 - `index.html`: Main HTML file.
 - `styles.css`: CSS file for styling the login page.
-- `app.js`: Main application file.
-- `auth.js`: Authentication configuration using Passport.js.
-- `routes.js`: Defines application routes.
+- `script.js`: Main application file.
 - `README.md`: Project documentation.
 
 ## Screenshots
 
-![Desktop](assets/screenshots/Desktop.jpeg)
-![Mobile](assets/screenshots/Mobile.jpeg)
+![Desktop](assets/screenshot/Desktop.jpeg)
+![Mobile](assets/screenshot/Mobile.jpeg)
 
 ## License
 
