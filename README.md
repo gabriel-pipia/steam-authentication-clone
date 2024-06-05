@@ -57,7 +57,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [Steam](https://steamcommunity.com/) for the authentication inspiration.
-- [Passport.js](http://www.passportjs.org/) for the authentication middleware.
 - [Font Awesome](https://fontawesome.com/) for icons.
 
 ## Author
